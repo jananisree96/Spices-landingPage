@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  left: 0;
+  padding: 0.5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: black;
+}
+.navbar .navbar-brand {
+  font-size: 25px;
+  font-weight: 800;
+  color: orange !important;
+}
+#navbarSupportedContent a {
+  color: white !important;
+  border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover {
+  border-bottom: 2px solid orange;
+  transition: 0.3s;
+}
+#navbarSupportedContent button {
+  background-color: orange;
+  color: black;
+  font-weight: 600;
+  border-radius: 15px;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* home */
+#home{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(./img2.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h1{
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 1px 0px #ccc,
+                 0px 2px 0px #c9c9c9,
+                 0px 3px 0px #bbb,
+                 0px 4px 0px #b9b9b9,
+                 0px 5px 0px #aaa,
+                 0px 6px 1px rgba(0,0,0,.1),
+                 0px 0px 5px rgba(0,0,0,.1),
+                 0px 1px 3px rgba(0,0,0,.3),
+                 0px 3px 5px rgba(0,0,0,.2),
+                 0px 5px 10px rgba(0,0,0,.25),
+                 0px 10px 10px rgba(0,0,0,.2),
+                 0px 20px 20px rgba(0,0,0,.15);
+}
+#home p{
+    font-size: 18px;
+    color: white;
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background-color: orange !important;
+    color: black !important;
+    font-weight: 700 !important;
+}
