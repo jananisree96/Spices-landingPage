@@ -42,40 +42,151 @@ section {
   justify-content: center;
 }
 /* home */
-#home{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(./img2.jpg);
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(./img2.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
 }
-#home h1{
-    color: white;
-    font-size: 5rem;
-    letter-spacing: 4px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 0px 1px 0px #ccc,
-                 0px 2px 0px #c9c9c9,
-                 0px 3px 0px #bbb,
-                 0px 4px 0px #b9b9b9,
-                 0px 5px 0px #aaa,
-                 0px 6px 1px rgba(0,0,0,.1),
-                 0px 0px 5px rgba(0,0,0,.1),
-                 0px 1px 3px rgba(0,0,0,.3),
-                 0px 3px 5px rgba(0,0,0,.2),
-                 0px 5px 10px rgba(0,0,0,.25),
-                 0px 10px 10px rgba(0,0,0,.2),
-                 0px 20px 20px rgba(0,0,0,.15);
+#home h1 {
+  color: white;
+  font-size: 5rem;
+  letter-spacing: 4px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 0px 1px 0px #ccc, 0px 2px 0px #c9c9c9, 0px 3px 0px #bbb,
+    0px 4px 0px #b9b9b9, 0px 5px 0px #aaa, 0px 6px 1px rgba(0, 0, 0, 0.1),
+    0px 0px 5px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.3),
+    0px 3px 5px rgba(0, 0, 0, 0.2), 0px 5px 10px rgba(0, 0, 0, 0.25),
+    0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 20px rgba(0, 0, 0, 0.15);
 }
-#home p{
-    font-size: 18px;
-    color: white;
+#home p {
+  font-size: 18px;
+  color: white;
 }
-#home .input-group{
-    width: 40%;
-    height: 45px;
+#home .input-group {
+  width: 40%;
+  height: 45px;
 }
-.signin{
-    background-color: orange !important;
-    color: black !important;
-    font-weight: 700 !important;
+.signin {
+  background-color: orange !important;
+  color: black !important;
+  font-weight: 700 !important;
+}
+
+/* ===== ABOUT SECTION ===== */
+#about {
+  background: linear-gradient(to right, #ff7f50, #ff4500);
+  color: white;
+  padding: 40px 0 !important;
+}
+
+#about img {
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+#about img:hover {
+  transform: scale(1.03);
+}
+
+#about p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #fefefe;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+#about h2 {
+  font-weight: 800;
+  font-size: 38px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+/* ===== PRODUCTS SECTION ===== */
+#products {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img3.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 100px 0;
+  color: #fff;
+}
+
+#products h1 {
+  font-weight: 800;
+  color: orange;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#products p {
+  color: #f8f8f8;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+/* ===== PRODUCT CARD DESIGN ===== */
+.product-card {
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.product-card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.product-card .card-body {
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.product-card .card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.product-card .card-text {
+  font-size: 15px;
+  color: #000 !important;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.btn-buy {
+  background-color: orange !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  border-radius: 25px !important;
+  padding: 8px 25px !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-buy:hover {
+  background-color: black !important;
+  color: orange !important;
+  transform: scale(1.05) !important;
 }
