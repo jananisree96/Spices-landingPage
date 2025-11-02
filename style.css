@@ -190,3 +190,62 @@ section {
   color: orange !important;
   transform: scale(1.05) !important;
 }
+/* ===== CONTACT SECTION ===== */
+#contact {
+  background: linear-gradient(to right, #ff7f50, #ff4500);
+  color: #fff;
+  padding: 100px 0;
+}
+
+#contact h1 {
+  font-weight: 800;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#contact p {
+  color: #f0f0f0;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form .form-control {
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.contact-form .form-control:focus {
+  border-color: orange;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.6);
+}
+
+.btn-contact {
+  background-color: orange !important;
+  color: black  !important;
+  font-weight: 700 !important;
+  border-radius: 25px !important;
+  padding: 10px 30px !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-contact:hover {
+  background-color: black !important;
+  color: orange !important;
+  transform: scale(1.05) !important;
+}
